@@ -1,0 +1,21 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.2.0">
+    <id>distribution</id>
+
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <directory>${project.basedir}</directory>
+            <outputDirectory>/</outputDirectory>
+
+            <includes>
+                <include>app.js</include>
+                <include>apptest.js</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>
